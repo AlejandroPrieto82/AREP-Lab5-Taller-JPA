@@ -28,7 +28,7 @@ El objetivo de este taller es implementar una aplicación básica en Spring Boot
 Se generó un proyecto con Spring Initializr utilizando el siguiente enlace:  
 [Proyecto Preconfigurado](https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.5.5&packaging=jar&jvmVersion=17&groupId=com.example&artifactId=accessing-data-jpa&name=accessing-data-jpa&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.accessing-data-jpa&dependencies=data-jpa,h2)
 
-![Inicializador de Spring](image.png)  
+![Inicializador de Spring](img/image-0.png)  
 **Inicializador de Spring Boot**
 
 ---
@@ -58,7 +58,7 @@ public class Customer {
 }
 ````
 
-![Clase Customer](image-1.png)
+![Clase Customer](img/image-1.png)
 **Entidad JPA `Customer`**
 
 ---
@@ -75,7 +75,7 @@ public interface CustomerRepository extends CrudRepository<Customer, Long> {
 }
 ```
 
-![Repositorio](image-2.png)
+![Repositorio](img/image-2.png)
 **Repositorio con métodos personalizados**
 
 ---
@@ -116,7 +116,7 @@ public class AccessingDataJpaApplication {
 }
 ```
 
-![Clase Main](image-3.png)
+![Clase Main](img/image-3.png)
 **Clase principal con pruebas automáticas**
 
 ---
@@ -129,10 +129,10 @@ public class AccessingDataJpaApplication {
 ./mvnw clean package
 ```
 
-![Compilación](image-4.png)
+![Compilación](img/image-4.png)
 **Ejecución del build con Maven**
 
-![Build Éxito](image-5.png)
+![Build Éxito](img/image-5.png)
 
 ---
 
@@ -142,7 +142,7 @@ public class AccessingDataJpaApplication {
 java -jar target/accessing-data-jpa-0.0.1-SNAPSHOT.jar
 ```
 
-![Ejecutando la app](image-6.png)
+![Ejecutando la app](img/image-6.png)
 **Aplicación corriendo**
 
 ### 🔍 Salida esperada
@@ -163,7 +163,7 @@ Customer[id=1, firstName='Jack', lastName='Bauer']
 Customer[id=3, firstName='Kim', lastName='Bauer']
 ```
 
-![Resultados](image-7.png)
+![Resultados](img/image-7.png)
 **Salida en consola**
 
 ---
